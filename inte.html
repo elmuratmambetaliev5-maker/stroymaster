@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>СтройМастер | Ремонт квартир под ключ</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#0d6efd;
+color:#fff;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.contacts{
+text-align:right;
+}
+
+.contacts a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:80vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:24px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ff9800;
+color:white;
+padding:15px 35px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#0d6efd;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.advantages{
+background:#eaf3ff;
+}
+
+.advantages ul{
+max-width:900px;
+margin:auto;
+list-style:none;
+}
+
+.advantages li{
+padding:12px;
+font-size:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact-box{
+background:white;
+max-width:700px;
+margin:auto;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-box p{
+font-size:20px;
+margin-bottom:15px;
+}
+
+form{
+margin-top:20px;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:36px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+header{
+flex-direction:column;
+text-align:center;
+gap:15px;
+}
+
+.contacts{
+text-align:center;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">СтройМастер</div>
+
+<div class="contacts">
+📞 <a href="tel:+79298149050">+7 929 814 90 50</a><br>
+📍 Ростов-на-Дону, Пролетарский район
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Ремонт квартир под ключ</h1>
+<p>Сантехника • Штукатурка • Укладка плитки • Отделочные работы</p>
+<a href="#contact" class="btn">Оставить заявку</a>
+</div>
+</section>
+
+<section>
+<h2>Наши услуги</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Сантехнические работы</h3>
+<p>Монтаж сантехники, замена труб, смесителей, устранение протечек и засоров.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Штукатурные работы</h3>
+<p>Выравнивание стен и потолков, подготовка под обои и покраску.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Укладка плитки</h3>
+<p>Плитка, керамогранит, мозаика для кухни, ванной и пола.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Ремонт под ключ</h3>
+<p>Полный цикл ремонта квартир и домов от демонтажа до сдачи объекта.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="advantages">
+<h2>Почему выбирают нас</h2>
+
+<ul>
+<li>✅ Более 10 лет опыта</li>
+<li>✅ Бесплатный выезд и замер</li>
+<li>✅ Гарантия на выполненные работы</li>
+<li>✅ Работа по договору</li>
+<li>✅ Соблюдение сроков</li>
+<li>✅ Честные цены</li>
+</ul>
+</section>
+
+<section>
+<h2>Наши работы</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80">
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Контакты</h2>
+
+<div class="contact-box">
+<p><strong>Телефон:</strong> +7 929 814 90 50</p>
+<p><strong>Адрес:</strong> Ростов-на-Дону, Пролетарский район</p>
+
+<form>
+<input type="text" placeholder="Ваше имя">
+<input type="tel" placeholder="Ваш телефон">
+<textarea rows="5" placeholder="Опишите необходимые работы"></textarea>
+<button type="submit">Отправить заявку</button>
+</form>
+</div>
+
+</section>
+
+<footer>
+© 2026 СтройМастер | Ростов-на-Дону | Телефон: +7 929 814 90 50
+</footer>
+
+</body>
+</html>
